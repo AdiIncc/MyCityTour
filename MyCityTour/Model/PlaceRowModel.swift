@@ -23,7 +23,7 @@ struct PlaceRowModel: Identifiable {
         self.adress = place.vicinity
         guard let photos = place.photos,
         let firstPhoto = photos.first,
-              let photoURL = URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=\(firstPhoto.photoRefernce)&key=AIzaSyDtCgXZqgEhfTMEB8_psL8g8JUwOoKuWtU") else {
+              let photoURL = URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=\(firstPhoto.photoRefernce)&key=") else {
             return nil
         }
         self.photoURL = photoURL
